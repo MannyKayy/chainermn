@@ -43,3 +43,8 @@ Mount a volume for external data sets
     $ make DATA=~/mydata
 
 Prints all make tasks
+
+
+### Default User
+
+The default (root) username and password in this container is `chainer`.
