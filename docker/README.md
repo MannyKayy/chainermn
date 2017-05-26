@@ -33,7 +33,7 @@ Build the container and start a bash
 
     $ make bash
 
-To run a notebook using a specific GPU, pass in the 'GPU' flag
+To run a notebook using a specific GPU, pass in the `GPU` flag
 
     $ make notebook GPU=0 # or [ipython, bash]
 
@@ -43,6 +43,8 @@ Mount a volume for external data sets
     $ make DATA=~/mydata
 
 Prints all make tasks
+
+    $ make help
 
 
 ### Default User
