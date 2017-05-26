@@ -50,3 +50,11 @@ Prints all make tasks
 ### Default User
 
 The default (root) username and password in this container is `chainer`.
+
+
+### Notes
+
+This container was developed for the `single-node` environment.
+
+To use this container on amazon aws `g2.x` instances, uncomment `line 61` in the Dockerfile.
+This compiles nccl for devices with cuda compute capability `3.0`.
