@@ -58,3 +58,7 @@ This container was developed for the `single-node` environment.
 
 To use this container on amazon aws `g2.x` instances, uncomment `line 61` in the Dockerfile.
 This compiles nccl for devices with cuda compute capability `3.0`.
+
+To avoid any issues caused by user and group permissions:
+ - Make sure docker/nvidia-docker permissions are correctly setup.
+ - By default, the `Makefile` sets up the `Data` folder, within which code should run correctly.
