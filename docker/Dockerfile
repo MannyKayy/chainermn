@@ -18,7 +18,6 @@ RUN mkdir -p $CONDA_DIR && \
     apt-get install -y \
 
     wget \
-    vim \
     git \
     g++ \
     graphviz \

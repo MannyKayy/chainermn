@@ -16,6 +16,10 @@ quick links here:
 For GPU support install NVIDIA drivers (ideally latest) and
 [nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
 
+### Multi-Node Performance
+If you run ChainerMN on mutiple computing nodes, we strongly
+recommend the use of a high speed interconnect such as Infiniband
+or OmniPath to obtain [maximum performance of ChainerMN](https://chainer.org/general/2017/02/08/Performance-of-Distributed-Deep-Learning-Using-ChainerMN.html#principle-of-chainermn-implementation).
 
 ## Running the container
 
@@ -61,4 +65,4 @@ This compiles nccl for devices with cuda compute capability `3.0`.
 
 To avoid any issues caused by user and group permissions:
  - Make sure docker/nvidia-docker permissions are correctly setup.
- - By default, the `Makefile` sets up the `Data` folder, within which code should run correctly.
+ - By default, the `Makefile` sets up the `data` folder, within which code should run correctly.
